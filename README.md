@@ -1,0 +1,2 @@
+# jstips
+javascript tips
