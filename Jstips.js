@@ -18,12 +18,12 @@ function calculate(arr, func) {
 
 // function的判斷--目前年齡
 function agefunc(arr) {
-    return 2018 - arr;
+    return 2018 - arr;//數值
 }
 
 // function的判斷---已成年的
 function isfullage(arr) {
-    return arr >= 18;
+    return arr >= 18; //布林值判斷
 }
 
 //輸出結果
@@ -32,3 +32,20 @@ var fullage = calculate(ages, isfullage);
 
 console.log(ages);
 console.log(fullage);
+
+// ====做簡單arrayloop流程=====
+
+var array =[4, 9, 16, 25 ];
+
+array.forEach(myFunction);
+
+function myFunction(item, index){
+    console.log('index['+index+']'+item);
+}
+
+var newArray=array.map(function(item){
+    return item*2;
+})
+
+console.log(newArray);
+console.log(array);
